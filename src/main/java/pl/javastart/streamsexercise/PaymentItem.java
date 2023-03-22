@@ -37,4 +37,8 @@ public class PaymentItem {
     public void setFinalPrice(BigDecimal finalPrice) {
         this.finalPrice = finalPrice;
     }
+
+    public BigDecimal calculateDiscount() {
+        return regularPrice.subtract(finalPrice);
+    }
 }
