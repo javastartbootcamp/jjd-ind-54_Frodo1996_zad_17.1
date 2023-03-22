@@ -15,6 +15,9 @@ public class Payment {
         this.paymentItems = paymentItems;
     }
 
+    public Payment() {
+    }
+
     public User getUser() {
         return user;
     }
